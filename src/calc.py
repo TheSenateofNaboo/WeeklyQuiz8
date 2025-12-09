@@ -25,7 +25,7 @@ def div(a, b):
 
 #Logs a number and determines base
 def log(a, b=10):
-  if (b != 10):
+  if (b == 10):
     return math.log10(a)
   else:
     return math.log(a, b)
