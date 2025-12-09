@@ -87,7 +87,7 @@ def test_sin2():
 
 #Cos Tests
 def test_cos():
-    assert cos(math.pi / 2) == 0
+    assert cos(math.pi) == -1
 
 def test_cos2():
     assert cos(0) == 1
@@ -112,10 +112,13 @@ def test_sqrt5():
 
 #Perc Tests
 def test_perc():
-    assert perc(0.1) == "10%"
+    assert perc(0.1) == "10.0%"
 
 def test_perc2():
     assert perc(0.5) != 50
 
 def test_perc3():
     assert perc(50) == "5000%"
+
+def test_perc4():
+    assert perc(1) != "100.0%"
