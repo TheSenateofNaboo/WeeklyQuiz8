@@ -1,4 +1,5 @@
 import sys
+import math
 from pathlib import Path
 
 root = Path(__file__).resolve().parents[1]
@@ -78,7 +79,7 @@ def test_square2():
 
 #Sin Tests
 def test_sin():
-    assert sin(1.5708) == 1
+    assert sin(math.pi / 2) == 1
 
 def test_sin2():
     assert sin(0) == 0
@@ -86,7 +87,7 @@ def test_sin2():
 
 #Cos Tests
 def test_cos():
-    assert cos(1.5708) == 0
+    assert cos(math.pi / 2) == 0
 
 def test_cos2():
     assert cos(0) == 1
