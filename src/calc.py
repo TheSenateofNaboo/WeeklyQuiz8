@@ -16,13 +16,19 @@ def mult(a, b):
 
 #Divides b from a
 def div(a, b):
-  return a / b
+  if (b == 0):
+    return "N/A"
+  else:
+    return a / b
 
 #Advance operations: log, square, sin, cos, square root, percentage. Think of boundary conditions
 
 #Logs a number and determines base
-def log(a):
-  return math.log(a)
+def log(a, b=10):
+  if (b != 10):
+    return math.log10(a)
+  else:
+    return math.log(a, b)
   
 #Squares a number
 def square(a):
